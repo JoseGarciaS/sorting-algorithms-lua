@@ -1,11 +1,11 @@
 local util = require("util")
 
-local maxArrayLength = 5 * 10^5
+local maxArrayLength = 3 * 10^5
 
 local startTime = os.clock()
 
 local array = util.generateArray(util.sizes.LARGE, maxArrayLength)
-local sortedArray = util.sort.bubbleSort(array)
+local sortedArray = util.sort.heapSort(array)
 
 local endTime = os.clock()
 

@@ -20,12 +20,12 @@ util.generateArray = function(size, maxLength)
 
     if size == util.sizes.SMALL then
         for i = 1, math.floor(maxLength / 4), 1 do
-            table.insert(newArray, math.random(1, maxLength / 4))
+            table.insert(newArray, math.random(1, maxLength))
         end
 
     elseif size == util.sizes.MEDIUM then
         for i = 1, math.floor(maxLength / 2), 1 do
-            table.insert(newArray, math.random(1, maxLength / 2))
+            table.insert(newArray, math.random(1, maxLength))
         end
 
     elseif size == util.sizes.LARGE then
